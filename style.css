@@ -29,6 +29,7 @@ body {
 
 .main-container {
     display: flex; 
+
 }
 
 
@@ -46,6 +47,8 @@ body {
     display: flex; 
     justify-content: center;
     width: 100%;
+    position: relative;
+
 }
 .main-content-section  button {
     padding: 10px 20px;
@@ -65,3 +68,28 @@ body {
     opacity: 0.6;
 }
 
+.create-task {
+    display: block;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    padding: 10px 20px;
+}
+
+.create-task label {
+    font-size: 1.5rem;
+}
+.create-task input {
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 10px 5px; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 5px 0; 
+}
+
+.create-task input:focus{
+    outline: none; 
+}
